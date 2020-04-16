@@ -1,3 +1,4 @@
+/* --- Reset --- */
 * {
   margin: 0;
   padding: 0;
@@ -8,62 +9,10 @@ html {
   font-family: "Baloo Paaji 2", sans-serif, cursive;
 }
 body {
-  /*AF1B3F*/
-  /*#FBFCFF*/
   background: linear-gradient(to left top, rgba(3, 25, 39, 0.808), #fbfcff);
 }
-.modal-container {
-  position: fixed;
-  border: 1px solid #031927;
-  height: 50%;
-  width: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  max-width: 80rem;
-  margin: 0 auto;
-  display: none;
-}
-.show{
-  display: block;
-}
-.close-modal {
-  position: absolute;
-  right: 1rem;
-  text-decoration: none;
-  color: #031927;
-  font-size: 5rem;
-}
-.left-modal {
-  font-size: 5rem;
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #ffffff;
-}
-.right-modal {
-  right: 0;
-  font-size: 5rem;
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #fff;
-}
-.main-container {
-  height: 100vh;
-  position: relative;
-  text-align: center;
-}
-.img-modal{
-  z-index: -1;
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+/* --- Reset --- */
+/* --- Header --- */
 .name {
   font-weight: 500;
 }
@@ -108,6 +57,8 @@ body {
 .input:focus {
   border: 2px solid #031927;
 }
+/* --- Header --- */
+/* --- Main Container --- */
 .items-container {
   padding: 2rem;
   position: relative;
@@ -127,7 +78,7 @@ body {
   max-width: 100%;
   transition: all 0.3s;
 }
-.store-img:hover{
+.store-img:hover {
   cursor: pointer;
 }
 .store-img:hover {
@@ -153,6 +104,62 @@ body {
 .store-card-price {
   right: 2rem;
 }
+/* --- Main Container --- */
+/* --- Modal --- */
+.modal-container {
+  position: fixed;
+  border: 1px solid #031927;
+  height: 50%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: none;
+}
+.show {
+  display: block;
+}
+.close-modal {
+  position: absolute;
+  right: 1rem;
+  text-decoration: none;
+  color: #031927;
+  font-size: 5rem;
+}
+.left-modal {
+  font-size: 5rem;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+.right-modal {
+  right: 0;
+  font-size: 5rem;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.main-container {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+.img-modal {
+  z-index: -1;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* --- Modal --- */
+/* --- Media q --- */
 @media screen and (min-width: 500px) {
   html {
     font-size: 42.5%;
@@ -176,4 +183,8 @@ body {
   .items-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .modal-container {
+    height: 60%;
+  }
 }
+/* --- Media q --- */

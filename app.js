@@ -43,13 +43,15 @@
 
 /* --- Modal Code --- */
 (function () {
+  //varijable
   let modal = document.querySelector(".modal-container");
   let modalImg = document.querySelector(".img-modal");
+  let btns = document.querySelectorAll(".modalBtn");
   let closeBtn = document.querySelector(".close-modal");
   let imagesList = [];
   let numberIndex;
   let images = document.querySelectorAll(".store-img");
-  let btns = document.querySelectorAll(".modalBtn");
+  //eventi
   images.forEach((img) => {
     imagesList.push(img.src);
   });
